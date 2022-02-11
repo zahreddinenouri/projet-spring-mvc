@@ -5,6 +5,11 @@
 <body>
 	<h1 align="center">premiere vue spring</h1>
 	<h2 th:text="${workshop}"></h2>
+	<h1> listes des formations </h1>
+	<ul>
+	<li th:each="name:${names}" th:text="${name}"></li>
+	</ul>
+	
 </body>
 
 </html>
